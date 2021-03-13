@@ -6,23 +6,124 @@
 
     <groupId>org.example</groupId>
     <artifactId>events</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <name>events</name>
     <description>Demo project for Example</description>
 
+    <properties>
+        <java.version>14</java.version>
+    </properties>
+
+    <!--spring-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.4.3</version>
     </parent>
 
-    <properties>
-        <java.version>11</java.version>
-    </properties>
+    <modules>
+        <!--deployment, config, common-->
+        <module>deployment</module>
+        <module>config</module>
+        <module>common</module>
+        <!--business-->
+        <module>email</module>
+    </modules>
 
-    <dependencies>
+    <dependencyManagement>
+        <dependencies>
 
-    </dependencies>
+            <!--ALL events dependencies-->
+
+            <!--business-->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>email-ws</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>email-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>email-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!--common-->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>common-ws</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>common-exception</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>common-assert</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>common-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!--config-->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>config-db-h2</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>config-swagger</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>config-date-time</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!--ALL repositories dependencies-->
+
+            <!--swagger-->
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>2.1.6</version>
+            </dependency>
+
+            <!--doc-->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>1.5.2</version>
+            </dependency>
+
+            <!--database-->
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>1.4.200</version>
+            </dependency>
+
+            <!--utils-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>
