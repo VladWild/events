@@ -30,6 +30,7 @@
         <module>common</module>
         <!--business-->
         <module>email</module>
+        <module>push</module>
     </modules>
 
     <dependencyManagement>
@@ -37,7 +38,9 @@
 
             <!--ALL events dependencies-->
 
-            <!--business-->
+            <!--begin of business-->
+
+            <!--email-->
             <dependency>
                 <groupId>org.example</groupId>
                 <artifactId>email-ws</artifactId>
@@ -53,6 +56,25 @@
                 <artifactId>email-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
+            <!--push-->
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>push-ws</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>push-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>push-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!--end of business-->
 
             <!--common-->
             <dependency>
@@ -92,6 +114,11 @@
                 <artifactId>config-date-time</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>config-db-derby</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <!--ALL repositories dependencies-->
 
@@ -114,6 +141,11 @@
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <version>1.4.200</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.derby</groupId>
+                <artifactId>derby</artifactId>
+                <version>10.13.1.1</version>
             </dependency>
 
             <!--utils-->

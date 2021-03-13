@@ -3,29 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>deployment</artifactId>
+        <artifactId>push</artifactId>
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sync-api</artifactId>
-
-    <properties>
-        <start-class>org.example.deployment.sync.api.SyncApplication</start-class>
-    </properties>
+    <artifactId>push-ws</artifactId>
 
     <dependencies>
 
-        <!--
+        <!--events dependencies-->
+        <!--common-->
         <dependency>
             <groupId>org.example</groupId>
-            <artifactId>email-ws</artifactId>
+            <artifactId>common-ws</artifactId>
         </dependency>
-        -->
+        <!--service-->
         <dependency>
             <groupId>org.example</groupId>
-            <artifactId>push-ws</artifactId>
+            <artifactId>push-service</artifactId>
         </dependency>
 
     </dependencies>

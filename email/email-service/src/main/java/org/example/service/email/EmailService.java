@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class EmailService {
 
-    private EmailRepository emailRepository;
+    private final EmailRepository emailRepository;
 
     public EmailService(EmailRepository emailRepository) {
         this.emailRepository = emailRepository;
