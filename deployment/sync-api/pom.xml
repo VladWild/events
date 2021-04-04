@@ -17,12 +17,10 @@
 
     <dependencies>
 
-        <!--
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>email-ws</artifactId>
         </dependency>
-        -->
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>push-ws</artifactId>

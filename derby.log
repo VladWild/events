@@ -1,10 +1,10 @@
 ----------------------------------------------------------------
-Sat Mar 13 19:10:04 MSK 2021:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0178-2c5a-1294-00000fcaf580 
-on database directory memory:C:\Projects\events\ccff424e-a970-485a-8ed3-e69e2633f9a0 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5a07e868 
-Loaded from file:/C:/Users/vladw/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+Sun Apr 04 13:55:12 MSK 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0178-9c85-b712-00000165eb38 
+on database directory C:\Projects\events\target\derbydb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4b1210ee 
+Loaded from file:/C:/Users/v.v.gusev/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
 java.vendor=Oracle Corporation
-java.runtime.version=14.0.1+7
+java.runtime.version=15.0.2+7-27
 user.dir=C:\Projects\events
 os.name=Windows 10
 os.arch=amd64
