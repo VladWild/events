@@ -17,15 +17,17 @@
 
     <dependencies>
 
+        <!--
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>email-ws</artifactId>
         </dependency>
-        <!--<dependency>
+        -->
+        <dependency>
             <groupId>org.example</groupId>
             <artifactId>push-ws</artifactId>
         </dependency>
--->
+
     </dependencies>
 
 </project>
